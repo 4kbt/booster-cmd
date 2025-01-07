@@ -8,9 +8,9 @@ rclone copy diskspace.txt gdrive:
 
 #Camera-operation monitoring
 echo "Cam 1" > last_images.txt
-ls -1 cam1/ | tail -1 >> last_images.txt
+ls -1 ~/cam1/ | tail -1 >> last_images.txt
 echo "Cam 2" >> last_images.txt
-ls -1 cam2/ | tail -1 >> last_images.txt
+ls -1 ~/cam2/ | tail -1 >> last_images.txt
 date >> last_images.txt
 rclone copy last_images.txt gdrive:
 
