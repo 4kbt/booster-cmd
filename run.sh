@@ -1,6 +1,9 @@
 #!/bin/bash
 touch ~/it_works_for_real.txt
 
+#canary
+rclone copy diskspace.dat gdrive:
+
 #rm ~/cam1/2022*.jpg
 rm ~/cam2/2022*.jpg
 
