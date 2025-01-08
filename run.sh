@@ -13,7 +13,7 @@ date >> diskspace.txt
 rclone copy diskspace.txt gdrive:
 
 #Camera-operation monitoring
-echo "Cam 1" > last_images.txt
+echo "Version 20250108 10:09am: Cam 1" > last_images.txt
 ls -1 ~/cam1/ | tail -1 >> last_images.txt
 echo "Cam 2" >> last_images.txt
 ls -1 ~/cam2/ | tail -1 >> last_images.txt
