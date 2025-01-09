@@ -12,6 +12,11 @@ df -h --total > diskspace.txt
 date >> diskspace.txt
 rclone copy diskspace.txt gdrive:
 
+#Dmesg error-reporting
+dmesg | tail > dmesg.txt
+date >> dmesg.txt
+rclone copy dmesg.txt gdrive:
+
 #Camera-operation monitoring
 echo "Version 20250108 10:09am: Cam 1" > last_images.txt
 ls -1 ~/cam1/ | tail -1 >> last_images.txt
