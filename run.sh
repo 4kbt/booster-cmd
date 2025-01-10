@@ -22,10 +22,11 @@ date >> dmesg.txt
 rclone copy dmesg.txt gdrive:
 
 #Camera-operation monitoring
-echo "Version 202501010 12:13pm: Cam 1" > last_images.txt
+echo "Version 202501010 12:18pm: Cam 1" > last_images.txt
 ls -1 ~/cam1/ | tail -1 >> last_images.txt
 echo "Cam 2" >> last_images.txt
 ls -1 ~/cam2/ | tail -1 >> last_images.txt
+dmesg | tail >> last_images.txt
 date >> last_images.txt
 rclone copy last_images.txt gdrive:
 
