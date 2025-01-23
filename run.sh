@@ -2,7 +2,7 @@
 touch ~/it_works_for_real.txt
 
 #copies the crontab's errorlog out to the Drive
-rclone copy /home/water/errorlog.txt gdrive:
+rclone copy ~/errorlog.txt gdrive:
 
 #Timestamp test to see if I can create a new file and push it as of January 10
 date > timestamp.txt
