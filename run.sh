@@ -13,6 +13,9 @@ rclone copy diskspace.dat gdrive:
 
 #rm ~/cam1/2022*.jpg
 #rm ~/cam2/2022*.jpg #Already executed, January 2025
+rm ~/cam1/2023*.jpg
+rm ~/cam2/2023*.jpg #Attempting to execute, August 2025
+
 
 #Disk-space tracking
 df -h --total > diskspace.txt
