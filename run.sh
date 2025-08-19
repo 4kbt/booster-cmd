@@ -6,6 +6,7 @@ rclone copy ~/errorlog.txt gdrive:
 
 #Timestamp test to see if I can create a new file and push it as of January 10
 date > timestamp.txt
+uptime >> timestamp.txt
 rclone copy timestamp.txt gdrive:
 
 #canary
@@ -15,13 +16,14 @@ rclone copy diskspace.dat gdrive:
 #rm ~/cam2/2022*.jpg #Already executed, January 2025
 #rm ~/cam1/2023*.jpg
 #rm ~/cam2/2023*.jpg #Attempting to execute, August 2025
-rm ~/cam1/2024*.jpg
-rm ~/cam2/2024*.jpg #Attempting to execute, August 2025
+#rm ~/cam1/2024*.jpg
+#rm ~/cam2/2024*.jpg #Attempting to execute, August 2025
 
 
 
 #Disk-space tracking
 df -h --total > diskspace.txt
+ls ~/ >> diskspace.txt
 date >> diskspace.txt
 rclone copy diskspace.txt gdrive:
 
