@@ -24,6 +24,10 @@ rclone copy diskspace.dat gdrive:
 #Disk-space tracking
 df -h --total > diskspace.txt
 ls ~/ >> diskspace.txt
+echo "\ncam1 disk space" >> diskspace.txt
+du -h ~/cam1 >> diskspace.txt
+echo "\ncam2 disk space" >> diskspace.txt
+du -h ~/cam2 >> diskspace.txt
 date >> diskspace.txt
 rclone copy diskspace.txt gdrive:
 
